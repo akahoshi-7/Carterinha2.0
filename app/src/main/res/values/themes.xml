@@ -1,0 +1,41 @@
+<resources>
+    <style name="Theme.Carterinha" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/terminal_green</item>
+        <item name="colorOnPrimary">@color/terminal_background</item>
+        <item name="colorPrimaryContainer">@color/terminal_surface</item>
+        <item name="colorOnPrimaryContainer">@color/terminal_green</item>
+        <item name="colorSecondary">@color/terminal_green</item>
+        <item name="colorOnSecondary">@color/terminal_background</item>
+        <item name="colorSecondaryContainer">@color/terminal_surface</item>
+        <item name="colorOnSecondaryContainer">@color/terminal_green</item>
+        <item name="colorTertiary">@color/terminal_green</item>
+        <item name="colorOnTertiary">@color/terminal_background</item>
+        <item name="colorTertiaryContainer">@color/terminal_surface</item>
+        <item name="colorOnTertiaryContainer">@color/terminal_green</item>
+        <item name="colorError">@color/md_theme_error</item>
+        <item name="colorOnError">@color/md_theme_onError</item>
+        <item name="colorErrorContainer">@color/md_theme_errorContainer</item>
+        <item name="colorOnErrorContainer">@color/md_theme_onErrorContainer</item>
+        <item name="android:colorBackground">@color/terminal_background</item>
+        <item name="colorOnBackground">@color/terminal_green</item>
+        <item name="colorSurface">@color/terminal_background</item>
+        <item name="colorOnSurface">@color/terminal_green</item>
+        <item name="colorSurfaceVariant">@color/terminal_surface</item>
+        <item name="colorOnSurfaceVariant">@color/terminal_green</item>
+        <item name="colorOutline">@color/terminal_green</item>
+        <item name="colorOutlineVariant">@color/terminal_green</item>
+        <item name="colorSurfaceInverse">@color/terminal_green</item>
+        <item name="colorOnSurfaceInverse">@color/terminal_background</item>
+        <item name="colorPrimaryInverse">@color/terminal_background</item>
+        <item name="colorSurfaceDim">@color/terminal_background</item>
+        <item name="colorSurfaceBright">@color/terminal_surface</item>
+        <item name="colorSurfaceContainerLowest">@color/terminal_background</item>
+        <item name="colorSurfaceContainerLow">@color/terminal_background</item>
+        <item name="colorSurfaceContainer">@color/terminal_surface</item>
+        <item name="colorSurfaceContainerHigh">@color/terminal_surface</item>
+        <item name="colorSurfaceContainerHighest">@color/terminal_surface</item>
+        <item name="android:statusBarColor">@color/terminal_background</item>
+        <item name="android:navigationBarColor">@color/terminal_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
