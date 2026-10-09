@@ -44,7 +44,6 @@ fun AppNavHost(
             popUpTo(0) { inclusive = true }
         }
     }
-
     fun navItemsFor(currentRoute: String) = listOf(
         TerminalNavItem(
             label = "Home",
@@ -186,6 +185,7 @@ fun AppNavHost(
                         modifier = Modifier.padding(innerPadding),
                         viewModel = unidadeCurricularViewModel
                     )
+
                 }
             }
         }

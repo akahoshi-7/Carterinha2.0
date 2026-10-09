@@ -8,11 +8,11 @@ class FakeLoginRepositoryImpl : LoginRepository {
     override suspend fun login(usuario: String, senha: String)
             : Result<UsuarioLogado> {
         delay(1500)
-        return if(usuario.equals("aluno") && senha.equals("123")){
+        return if(usuario.equals("maria") && senha.equals("123")){
             Result.success(
                 UsuarioLogado(
                     id="1",
-                    nome = "Rafael Costa",
+                    nome = "Maria",
                     matricula = "25162248",
                     curso = "Desenvolvimento de Sistema",
                     turma = "2DEVEST-B",

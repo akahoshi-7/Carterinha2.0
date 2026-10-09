@@ -4,6 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
@@ -35,7 +36,8 @@ fun PerfilAluno(
             contentDescription = "Foto do aluno",
             contentScale = ContentScale.Crop,
             modifier = Modifier
-                .size(140.dp)
+                .size(160.dp)
+                .padding(16.dp)
                 .clip(RectangleShape)
                 .border(
                     width = 1.dp,

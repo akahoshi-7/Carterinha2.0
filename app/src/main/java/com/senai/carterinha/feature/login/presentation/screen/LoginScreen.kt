@@ -61,7 +61,8 @@ fun LoginScreen(
         Text(
             text = "Login",
             fontSize = 30.sp,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.Bold,
+            color = Color.White
         )
         TextField(
             value = uiState.usuario,
@@ -70,7 +71,7 @@ fun LoginScreen(
             },
             label = {
                 Text(
-                    text = "Email"
+                    text = "Usuario"
                 )
             },
             isError = uiState.erroMessage != null

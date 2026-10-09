@@ -1,6 +1,4 @@
-package com.senai.carterinha.feature.unidadecurricular.data
-
-import com.senai.carterinha.feature.unidadecurricular.domain.model.UnidadeCurricular
+package com.senai.carterinha.feature.unidadecurricular.domain.model
 
 fun dataSource (): List<UnidadeCurricular> {
     return listOf(

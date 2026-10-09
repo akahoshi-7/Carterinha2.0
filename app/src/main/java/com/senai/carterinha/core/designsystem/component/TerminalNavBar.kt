@@ -15,29 +15,19 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 
-/**
- * Item de navegação exibido na [TerminalNavBar].
- */
 data class TerminalNavItem(
     val label: String,
     val selected: Boolean = false,
     val onClick: () -> Unit
 )
 
-/**
- * Barra de navegação no estilo "terminal": caixa com borda fina verde sobre
- * fundo preto, com os itens em maiúsculas separados por espaçamento — igual
- * ao mockup de referência (HOME / EMPLOYEES / LOCATION / MORE+).
- *
- * O último item normalmente é usado para abrir o menu (drawer), assim como
- * "MORE+" no mockup.
- */
+
 @Composable
 fun TerminalNavBar(
     items: List<TerminalNavItem>,
     onMoreClick: () -> Unit,
     modifier: Modifier = Modifier,
-    moreLabel: String = "MAIS+"
+    moreLabel: String = ""
 ) {
     val scrollState = rememberScrollState()
 

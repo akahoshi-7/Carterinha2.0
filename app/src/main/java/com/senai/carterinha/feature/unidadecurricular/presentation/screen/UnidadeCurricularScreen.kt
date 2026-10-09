@@ -16,6 +16,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -44,7 +45,7 @@ fun UnidadeCurricularScreen(
 
 @Composable
 fun UnidadeCurricularContent(
-    uiState: UnidadeCurricularUiState, // Subsitua pelo nome real da sua classe de UiState
+    uiState: UnidadeCurricularUiState,
     onRetry: () -> Unit,
     modifier: Modifier = Modifier
 ) {
@@ -59,6 +60,7 @@ fun UnidadeCurricularContent(
                 CircularProgressIndicator()
             }
         }
+
         errorMessage != null -> {
             Column(
                 modifier = modifier
@@ -71,6 +73,7 @@ fun UnidadeCurricularContent(
                     text = errorMessage,
                     color = MaterialTheme.colorScheme.error
                 )
+
                 Button(
                     modifier = Modifier.padding(16.dp),
                     onClick = onRetry
@@ -79,14 +82,19 @@ fun UnidadeCurricularContent(
                 }
             }
         }
+
         uiState.listaUnidadesCurriculares.isEmpty() -> {
             Box(
                 modifier = modifier.fillMaxSize(),
                 contentAlignment = Alignment.Center
             ) {
-                Text(text = "Nenhuma unidade curricular encontrada.")
+                Text(
+                    text = "Nenhuma unidade curricular encontrada.",
+                    color = Color.White
+                )
             }
         }
+
         else -> {
             LazyColumn(
                 modifier = modifier
@@ -99,9 +107,11 @@ fun UnidadeCurricularContent(
             ) {
                 items(
                     items = uiState.listaUnidadesCurriculares,
-                    key = { it.id } // Ajuste 'id' para a chave única da sua model
+                    key = { it.id }
                 ) { unidadeCurricular ->
-                    UnidadeCurricularCard(unidadeCurricular = unidadeCurricular)
+                    UnidadeCurricularCard(
+                        unidadeCurricular = unidadeCurricular
+                    )
                 }
             }
         }
